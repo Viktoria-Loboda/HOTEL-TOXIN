@@ -1,0 +1,25 @@
+{
+  "name": "hotel-toxin",
+  "version": "1.0.0",
+  "description": "Сайт для поиска номеров в отеле",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production", 
+    "start": "webpack --mode development" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktoria-Loboda/HOTEL-TOXIN.git"
+  },
+  "author": "Лобода В.Ю",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viktoria-Loboda/HOTEL-TOXIN/issues"
+  },
+  "homepage": "https://github.com/Viktoria-Loboda/HOTEL-TOXIN#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
