@@ -1,0 +1,19 @@
+$background: red;
+
+.container {
+	background: red;
+	width: 300px;
+	height: 300px;
+}
+
+.container p {
+	color: green;
+}
+
+.container .img {
+	width: 100px;
+	height: 100px;
+
+	border: 1px solid red;
+	background: url('../img/slide-1.jpg');
+}

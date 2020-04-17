@@ -1,0 +1,32 @@
+div.card-goods
+	header.slide-goods.card-goods__slide-goods
+		div.slide-goods__item 
+			img(src="./assets/img/goods-image/image.jpg" alt="Слайд-1" width="270px" height="152px")
+		div.slide-goods__item 
+			img(src="./assets/img/goods-image/image-2.jpg" alt="Слайд-2" width="270px" height="152px")
+		div.slide-goods__item 
+			img(src="./assets/img/goods-image/image-3.jpg" alt="Слайд-3" width="270px" height="152px")
+		div.slide-goods__item 
+			img(src="./assets/img/goods-image/image-3.jpg" alt="Слайд-3" width="270px" height="152px")
+		a.slide-goods__btn.slide-goods__btn--next
+		a.slide-goods__btn.slide-goods__btn--prev
+		div.slide-goods__dots
+			span.slide-goods__dots-item.active(id="1")
+			span.slide-goods__dots-item(id="2")
+			span.slide-goods__dots-item(id="3")
+			span.slide-goods__dots-item(id="4")
+	div.card-goods__main
+		div.card-goods__column.card-goods__column--top
+			p.card-goods__number-room № 
+				span.value 888
+				span.status  Люкс
+			p.card-goods__price-room 9 990<span class="currency">₽</span>
+				b  в сутки
+		div.card-goods__column.card-goods__column--bottom
+			div.rating.card-goods__rating
+				div.rating__item.active(data-rate="1")
+				div.rating__item(data-rate="2")
+				div.rating__item(data-rate="3")
+				div.rating__item(data-rate="4")
+				div.rating__item(data-rate="5")
+			p.card-goods__comments <b>145</b> Отзывов
