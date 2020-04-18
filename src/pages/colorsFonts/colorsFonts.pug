@@ -16,15 +16,55 @@ html(lang="ru")
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		title Document
 	body
-		include ../../components/card-goods/card-goods.pug
-
-		h2.caption Hippp
-		p.text kljl'авp[o]
-
-		p.text № 888 деловой
-		img(src="assets/img/slide-1.jpg", alt="фон" width="200" heigth="200")
-		div.pop pop
-
-		div.container
-			p opppoooopDKFD
-			div.img
+		div.wrapper
+			img.logo.wrapper__logo(src="./assets/img/group.png", alt="logo")
+			div.wrapper__lists
+				ul.colors.colors__list 
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Dark Shade 100%
+							p.colors__subtext #1F2041 
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Dark Shade 75%
+							p.colors__subtext #1F2041 
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Dark Shade 50%
+							p.colors__subtext #1F2041 
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Dark Shade 25%
+							p.colors__subtext #1F2041 
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Dark Shade 5%
+							p.colors__subtext #1F2041 
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Purple
+							p.colors__subtext #BC9CFF
+					li.colors__item
+						div.colors__square
+						div.colors__wrapper-text
+							p.colors__text Green
+							p.colors__subtext #6FCF97
+				ul.fonts.fonts__list
+					li.fonts__item
+						p.fonts__value H1
+						p.fonts__text This one is the sub-section or widget title
+					li.fonts__item
+						p.fonts__value H2
+						p.fonts__text Next one is the item title inside widgets
+					li.fonts__item
+						p.fonts__value H3
+						p.fonts__text This is a label or cta text
+					li.fonts__item
+						p.fonts__value Body
+						p.fonts__text This is the body text which is used for most of the design, like paragraphs, lists, etc.

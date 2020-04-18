@@ -1,0 +1,107 @@
+
+.dropdown {
+
+	&__input-wrapper {
+		position: relative;
+		width: 100%;
+	}
+
+	&__label {
+		width: 100%;
+		position: relative;
+	}
+
+	&__label::before {
+		content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: -2px;
+    background: url('./images/sprite.png') no-repeat;
+    background-position: -2px -314px
+	}
+
+	&__input {
+		width: 100%;
+		cursor: pointer;
+		padding-right: 40px;
+		text-overflow: ellipsis;
+	}
+
+	&__input.active {
+		border: 1px solid rgba(31, 32, 65, 0.5);
+		border-radius: 4px 4px 0 0;
+	}
+
+	&__toggle {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 11px;
+		width: 20px;
+		height: 20px;
+		background: url('./images/sprite.png') no-repeat;
+		background-position: 0 -311px;
+		cursor: pointer;
+	}
+}
+
+.counter {
+	width: 100%;
+	padding: 5px 7px 7px 15px;
+	box-sizing: border-box;
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	border-top: none;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 7px;
+	}
+
+	&__row:nth-last-child(1) {
+		margin-bottom: 0;
+	}
+
+	&__row-name {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #1F2041
+	}
+
+	&__inner {
+		width: 90px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn {
+		display: block;
+		width: 30px;
+		height: 30px;
+		padding: 3px;
+	
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		color: rgba(31, 32, 65, 0.5);
+		text-align: center;
+	  cursor: pointer;
+	  border-radius: 100%;
+
+	  box-sizing: border-box;
+	  border: 1px solid rgba(31, 32, 65, 0.5);
+	}
+
+	&__btn.disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+}

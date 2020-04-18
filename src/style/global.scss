@@ -1,22 +1,3 @@
-// картинки и шрифты
-
-$font-stack: -apple-system, 'Quicksand', sans-serif;
-
-@font-face {
-  font-family: 'Quicksand'; 
-  src: url("../fonts/Quicksand-Bold.svg") format('svg');
-  src: url("../fonts/Quicksand-Bold.woff") format('woff');
-  src: url("../fonts/Quicksand-Bold.ttf") format('truetype');  
-  font-weight: 600;
-  font-style: normal; 
-}
-
-.text {
-	font-family: $font-stack;
-	color: blue;
-}
-
-.caption {
-	font-family: $font-stack;
-	color: blue;
-}
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables.scss';

@@ -1,0 +1,23 @@
+div.dropdown(id="dropdown-guest")
+	div.dropdown__input-wrapper
+		input.dropdown__input(type="text" value="Сколько гостей" readonly)
+		span.dropdown__toggle
+	div.counter.dropdown__counter.visually-hidden
+		div.counter__row
+			span.counter__row-name Взрослые
+			div.counter__inner
+				span.counter__btn.counter__btn--minus -
+				span.counter__row-quantity 0
+				span.counter__btn.counter__btn--plus + 
+		div.counter__row
+			span.counter__row-name Дети
+			div.counter__inner
+				span.counter__btn.counter__btn--minus -
+				span.counter__row-quantity 0
+				span.counter__btn.counter__btn--plus + 
+		div.counter__row
+			span.counter__row-name Младенцы
+			div.counter__inner
+				span.counter__btn.counter__btn--minus.disabled -
+				span.counter__row-quantity 0
+				span.counter__btn.counter__btn--plus + 

@@ -1,0 +1,23 @@
+div.dropdown(id="dropdown")
+	div.dropdown__input-wrapper
+		input.dropdown__input(type="text" value="2 спальни, 2 кровати..." readonly)
+		span.dropdown__toggle
+	div.counter.dropdown__counter.visually-hidden
+		div.counter__row
+			span.counter__row-name Спальни
+			div.counter__inner
+				span.counter__btn.counter__btn--minus -
+				span.counter__row-quantity 2
+				span.counter__btn.counter__btn--plus + 
+		div.counter__row
+			span.counter__row-name Кровати
+			div.counter__inner
+				span.counter__btn.counter__btn--minus -
+				span.counter__row-quantity 2
+				span.counter__btn.counter__btn--plus + 
+		div.counter__row
+			span.counter__row-name Ванные комнаты
+			div.counter__inner
+				span.counter__btn.counter__btn--minus.disabled -
+				span.counter__row-quantity 0
+				span.counter__btn.counter__btn--plus + 
