@@ -1,0 +1,16 @@
+.rating {
+	display: flex;
+	margin-top: 10px;
+
+	&__item {
+		width: 24px;
+		height: 24px;
+		
+		background: url('../img/star_border.png') no-repeat;
+		cursor: pointer;
+	}
+
+	&__item.active {
+		background: url('../img/star.png') no-repeat;
+	}
+}

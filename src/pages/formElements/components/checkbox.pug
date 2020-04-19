@@ -1,0 +1,18 @@
+div.column.column--checkbox
+	div.row-checkbox
+		input(type="checkbox" value="smoke" id="smoke")
+		label(for="smoke") Можно курить
+		input(type="checkbox" value="pets" id="pets" checked)
+		label(for="pets") Можно с питомцами
+		input(type="checkbox" value="guests" id="guests" checked)
+		label(for="guests") Можно пригласить гостей (до 10 человек)
+	div.row-radio
+		input(type="radio" value="man" id="man" checked)
+		label(for="man") Мужчина
+		input(type="radio" value="woman" id="woman")
+		label(for="woman") Женщина
+	div.row-toggle
+		input.btn--toggle(type="checkbox" id="subscribe")
+		label(for="subscribe") Получать спецпредложения
+
+	include ../../../components/star-rating/star-rating.pug
