@@ -1,57 +1,53 @@
-// переключатель
-.btn--toggle[type="checkbox"] {
-	display: none;
-}
-
-.btn--toggle[type="checkbox"] + label {
-	position: relative;
-	padding: 0 0 0 48px;
-	cursor: pointer;
-	width: auto;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	color: rgba(31, 32, 65, 0.75);
-	text-transform: none;
-}
-
-.btn--toggle[type="checkbox"] + label::before {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 0;
-	width: 36px;
-	height: 18px;
-	border-radius: 13px;
-	background: #ffffff;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	transition: .2s;
-}
-
-.btn--toggle[type="checkbox"] + label::after {
-	content: '';
-	position: absolute;
-	top: 7px;
-	left: 4px;
-	width: 12px;
-	height: 12px;
-	border-radius: 10px;
-	background: #FFF;
-	transition: .2s;
-	background: rgba(31, 32, 65, 0.25);
-}
-
-.btn--toggle[type="checkbox"]:checked + label::before {
-	border: 1px solid #BC9CFF;
-	background: transparent;
-}
-
-.btn--toggle[type="checkbox"]:checked + label::after {
-	left: 21px;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
-
-
 @import '../../../components/star-rating/star-rating.scss';
+
+input[type="checkbox"] + .row__label {
+	margin-bottom: 13px;
+}
+
+.row__caption {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #1F2041;
+	margin-bottom: 15px;
+}
+
+.row-radio {
+	margin-top: 42px;
+
+	& .wrapper-flex {
+		width: 232px;
+		display: flex;
+	}
+}
+
+.row-toggle {
+	margin-top: 43px;
+	margin-bottom: 0px;
+
+	& label {
+		margin-bottom: 10px;
+	}
+}
+
+.row-btn-like {
+	margin-top: 42px;
+
+	& button {
+		margin-right: 5px;
+	}
+}
+
+.row-rate-button {
+	margin-top: 40px;
+
+	& .wrapper-flex {
+		margin-top: -5px;
+		width: 260px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

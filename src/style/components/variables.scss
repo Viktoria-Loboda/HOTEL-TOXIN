@@ -7,8 +7,8 @@ $black-05: rgba(31, 32, 65, 0.05);
 $purple: #BC9CFF;
 $green: #6FCF97;
 
-// fonts
-$main-font: 'Montserrat', 'Helvetica'; // придумать замену из общих шрифтов
+//--------------------------------------------FONTS
+$main-font: 'Montserrat', 'Helvetica';
 $caption-font: 'Quicksand', 'Geneva';
 
 @mixin fonts-for-h1 {

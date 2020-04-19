@@ -1,0 +1,218 @@
+label {
+	display: block;
+	width: 100%;
+	@include fonts-for-h3();
+}
+
+input {
+	width: 100%;
+	@include style-for-input();
+}
+
+input:hover,
+input:focus {
+	color: $black-75;
+	border: 1px solid $black-50;
+}
+
+input.field--default {
+	color: $black-25;
+	border: 1px solid $black-25;
+}
+
+input.field--default::placeholder {
+	color: $black-25;
+	cursor: auto;
+}
+
+input.field--default::placeholder:hover,
+input.field--default::placeholder:focus {
+	border: 1px solid $black-25;
+}
+
+label.field--select {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 30px;
+		right: 10px;
+		width: 20px;
+		height: 20px;
+		background: url('../img/sprite.png') no-repeat;
+		background-position: -680px -12px;
+	}
+}
+
+label.field--subscribe {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 30px;
+		right: 10px;
+		width: 36px;
+		height: 28px;
+		background: url('../img/sprite.png') no-repeat;
+		background-position: -244px -17px;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	position: relative;
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: $black-50;
+	text-transform: none;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before  {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	border: 1px solid $black-25;
+	box-sizing: border-box;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="radio"] + label:before {
+	content: "";
+	border-radius: 10px;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+  border: 1px solid $purple;
+}
+
+input[type="radio"]:checked + label:before {
+  border: 1px solid $purple;
+}
+
+input[type="checkbox"]:checked + label:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -15px -16px;
+}
+
+input[type="radio"]:checked + label:after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+
+	background: $purple;
+	border-radius: 100%;
+}
+
+.btn--toggle[type="checkbox"] {
+	display: none;
+}
+
+.btn--toggle[type="checkbox"] + label {
+	position: relative;
+	padding: 0 0 0 50px;
+	cursor: pointer;
+	width: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: $black-75;
+	text-transform: none;
+}
+
+.btn--toggle[type="checkbox"] + label::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 36px;
+	height: 18px;
+	border-radius: 13px;
+	background: #ffffff;
+	border: 1px solid $black-25;
+	transition: .2s;
+}
+
+.btn--toggle[type="checkbox"] + label::after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+	background: #FFF;
+	transition: .2s;
+	background: $black-25;
+}
+
+.btn--toggle[type="checkbox"]:checked + label::before {
+	border: 1px solid #BC9CFF;
+	background: transparent;
+}
+
+.btn--toggle[type="checkbox"]:checked + label::after {
+	width: 12px;
+	height: 12px;
+	top: 6px;
+	left: 21px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.btn--like {
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 12px;
+	color: $black-25;
+
+	width: 40px;
+	height: 20px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 3px 7px;
+	text-align: right;
+	box-sizing: border-box;
+
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -778px -15px;
+	cursor: pointer;
+}
+
+.btn--like-active {
+	color: #BC9CFF;
+	border: 1px solid #BC9CFF;
+  background-position: -729px -15px;
+}
