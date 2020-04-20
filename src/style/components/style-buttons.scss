@@ -216,3 +216,35 @@ input[type="radio"]:checked + label:after {
 	border: 1px solid #BC9CFF;
   background-position: -729px -15px;
 }
+
+.btn {
+	display: inline-block;
+	padding: 12px 18px;
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $purple;
+	background: transparent;
+	border-radius: 22px;
+
+	border: 2px solid $purple;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.btn--theme-purple {
+	padding: 15px 20px;
+	color: #ffffff;
+	border: none;
+	border-radius: 24px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.btn:visited,
+.btn:active {
+	opacity: 0.5;
+}
