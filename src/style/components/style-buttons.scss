@@ -7,6 +7,7 @@ label {
 input {
 	width: 100%;
 	@include style-for-input();
+	background: transparent;
 }
 
 input:hover,
@@ -38,6 +39,7 @@ label.field--select {
 		position: absolute;
 		top: 30px;
 		right: 10px;
+		z-index: -1;
 		width: 20px;
 		height: 20px;
 		background: url('../img/sprite.png') no-repeat;

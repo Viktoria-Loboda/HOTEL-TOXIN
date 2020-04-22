@@ -2,3 +2,7 @@
 @import './components/fonts.scss';
 @import './components/variables.scss';
 @import './components/style-buttons.scss';
+
+.visually-hidden {
+	display: none;
+}

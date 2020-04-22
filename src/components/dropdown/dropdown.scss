@@ -1,33 +1,18 @@
-
 .dropdown {
+	width: 266px;
 
 	&__input-wrapper {
 		position: relative;
 		width: 100%;
 	}
 
-	&__label {
-		width: 100%;
-		position: relative;
-	}
-
-	&__label::before {
-		content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 10px;
-    bottom: -2px;
-    background: url('./images/sprite.png') no-repeat;
-    background-position: -2px -314px
-	}
-
 	&__input {
-		width: 100%;
-		cursor: pointer;
 		padding-right: 40px;
 		text-overflow: ellipsis;
+	}
+
+	&__input:focus {
+		outline: none;
 	}
 
 	&__input.active {
@@ -35,16 +20,29 @@
 		border-radius: 4px 4px 0 0;
 	}
 
-	&__toggle {
-		display: block;
-		position: absolute;
-		top: 10px;
-		right: 11px;
-		width: 20px;
-		height: 20px;
-		background: url('./images/sprite.png') no-repeat;
-		background-position: 0 -311px;
+	&__wrapper-btn {
+		margin-top: 20px;
+		margin-bottom: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__btn {
+		font-family: $main-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: $black-50;
+		border: none;
+		background: transparent;
+		padding: 0;
 		cursor: pointer;
+	}
+
+	&__btn--use {
+		color: $purple;
 	}
 }
 
@@ -54,6 +52,15 @@
 	box-sizing: border-box;
 	border: 1px solid rgba(31, 32, 65, 0.5);
 	border-top: none;
+
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: $black;
+	box-shadow: 0px 10px 20px $black-05;
 
 	&__row {
 		display: flex;
@@ -97,7 +104,7 @@
 	  border-radius: 100%;
 
 	  box-sizing: border-box;
-	  border: 1px solid rgba(31, 32, 65, 0.5);
+	  border: 1px solid $black-25;
 	}
 
 	&__btn.disabled {

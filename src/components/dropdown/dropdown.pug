@@ -1,23 +1,26 @@
-div.dropdown(id="dropdown")
-	div.dropdown__input-wrapper
-		input.dropdown__input(type="text" value="2 спальни, 2 кровати..." readonly)
-		span.dropdown__toggle  /////????
+mixin dropdown(labelValue, inputValue, rowOneName, rowOneNumber, rowTwoName, rowTwoNumber, rowThreeName, rowThreeNumber, addBlock)
+	label.dropdown__label.field--select= labelValue
+		input.dropdown__input(type="text" value=inputValue readonly)
 	div.counter.dropdown__counter.visually-hidden
 		div.counter__row
-			span.counter__row-name Спальни
+			span.counter__row-name=rowOneName
 			div.counter__inner
 				span.counter__btn.counter__btn--minus -
-				span.counter__row-quantity 2
+				span.counter__row-quantity= rowOneNumber
 				span.counter__btn.counter__btn--plus + 
 		div.counter__row
-			span.counter__row-name Кровати
+			span.counter__row-name=rowTwoName
 			div.counter__inner
 				span.counter__btn.counter__btn--minus -
-				span.counter__row-quantity 2
+				span.counter__row-quantity= rowTwoNumber
 				span.counter__btn.counter__btn--plus + 
 		div.counter__row
-			span.counter__row-name Ванные комнаты
+			span.counter__row-name=rowThreeName
 			div.counter__inner
 				span.counter__btn.counter__btn--minus.disabled -
-				span.counter__row-quantity 0
+				span.counter__row-quantity= rowThreeNumber
 				span.counter__btn.counter__btn--plus + 
+		if addBlock
+			div.dropdown__wrapper-btn
+				button.dropdown__btn.dropdown__btn--clear очистить
+				button.dropdown__btn.dropdown__btn--use применить
