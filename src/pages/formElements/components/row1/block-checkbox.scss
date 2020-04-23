@@ -1,7 +1,12 @@
-@import '../../../components/star-rating/star-rating.scss';
+@import '../../../../components/star-rating/star-rating.scss';
 
 input[type="checkbox"] + .row__label {
 	margin-bottom: 13px;
+}
+
+.column--checkbox {
+	margin-top: -13px;
+  margin-left: -5px;
 }
 
 .row__caption {

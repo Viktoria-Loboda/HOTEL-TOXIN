@@ -1,16 +1,16 @@
 div.column.column--inputs
 	div.row-default
 		label text field <span>default</span>
-			input.field--default(type="text" placeholder="Email")
+			input.field--default(type="text" placeholder="Email" readonly)
 	div.row-hover
 		label text field <span>hover / focus</span>
 			input(type="text" placeholder="This is pretty awesome")
 	div.row-default
-		label dropdown <span>default</span>
+		label.field--select dropdown <span>default</span>
 			input.field--select(type="text" placeholder="Сколько гостей") 
 	div.row-default
 		label masked text field <span>default</span>
-			input(type="text" placeholder="ДД.ММ.ГГГГ")
+			input.field--default(type="text" placeholder="ДД.ММ.ГГГГ" readonly)
 	div.row-date-dropdown
 		label.field--select date dropdown
 			input(type="text" placeholder="ДД.ММ.ГГГГ")

@@ -1,0 +1,42 @@
+.info-about-room__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.info-about-room__item {
+	position: relative;
+	padding-left: 58px;
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+
+	padding-bottom: 17px;
+  margin-top: 23px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+
+	& span {
+		font-weight: 400;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 48px;
+		height: 48px;
+		background: url('../img/sprite.png') no-repeat;
+		background-position: -830px -17px;
+	}
+}
+
+.info-about-room__item--convenience {
+	&::before {
+		background: url('../img/sprite.png') no-repeat;
+		background-position: -908px -13px;
+	}
+}

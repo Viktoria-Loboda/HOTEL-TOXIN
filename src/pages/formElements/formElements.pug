@@ -16,9 +16,18 @@ html(lang="ru")
 		<meta name="description" content="Сайт бронирование номеров в отеле Toxin">
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	body
-		div.wrapper__input
-			//- include ./components/block-inputs.pug
-			//- include ./components/checkbox.pug
-			//- include ./components/buttons.pug
-			include ./components/dropdown.pug
-	
+		div.wrapper-columns
+			img.wrapper-columns__logo(src="./assets/img/group.png", alt="logo")
+			div.row.row1
+				include ./components/row1/block-inputs.pug
+				include ./components/row1/block-checkbox.pug
+				include ./components/row1/block-buttons.pug
+			div.row.row2
+				include ./components/row2/dropdown.pug
+			div.row.row3
+				include ./components/row3/checkbox-list.pug
+				include ./components/row3/checkbox-button.pug
+				include ./components/row3/list.pug
+			div.row.row4
+				include ./components/row4/list.pug
+				include ./components/row4/comments.pug
