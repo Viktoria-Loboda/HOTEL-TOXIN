@@ -13,7 +13,8 @@ const PATHS = {
 module.exports = {
 	entry: {
 		colorsFonts: `${PATHS.src}/pages/colorsFonts/colorsFonts.js`,
-		formElements: `${PATHS.src}/pages/formElements/formElements.js`
+		formElements: `${PATHS.src}/pages/formElements/formElements.js`,
+		cards: `${PATHS.src}/pages/cards/cards.js`
 	},
 	output: {
 		filename: `${PATHS.assets}js/[name].js`,
@@ -67,6 +68,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: `${PATHS.src}/pages/formElements/formElements.pug`,
 			filename: 'formElements.html',
+			inject: false
+		}),
+		new HtmlWebpackPlugin({
+			template: `${PATHS.src}/pages/cards/cards.pug`,
+			filename: 'cards.html',
 			inject: false
 		}),
 		new CopyWebpackPlugin([

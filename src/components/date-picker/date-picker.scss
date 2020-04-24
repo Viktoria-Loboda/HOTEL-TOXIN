@@ -1,0 +1,152 @@
+@import '../../plugins/air-datepicker/scss/datepicker.scss';
+
+// стили меняющие сам плагин
+.datepicker {
+  margin-top: 6px;
+  margin-left: 0px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.datepicker--content {
+  padding: 0;
+}
+
+.datepickers-container {
+  margin-top: -10px;
+}
+
+.datepicker--cell {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.datepicker--cell.datepicker--cell-day.-range-from-.-selected- {
+  background: rgba(224, 209, 255, 0.5);
+  border-radius: 50% 0% 0% 50%; 
+}
+
+.datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  z-index: -1;
+  border-radius: 100%;
+}
+
+.datepicker--cell.datepicker--cell-day.-in-range- {
+  background: rgba(224, 209, 255, 0.5);
+}
+
+.datepicker--cell.datepicker--cell-day.-range-to-.-selected- {
+  background: rgba(224, 209, 255, 0.5);
+  border-radius: 0% 50% 50% 0%; 
+}
+
+.datepicker--cell.datepicker--cell-day.-range-to-.-selected-::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  z-index: -1;
+  border-radius: 100%;
+}
+
+.datepicker--buttons {
+  padding: 0;
+  border-top: none;
+  font-family: $main-font, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $black-50;
+}
+
+.datepicker--button--use {
+  color: #BC9CFF;
+  cursor:pointer;
+}
+
+.datepicker--button--use:hover {
+  color: #9a6bff;
+}
+
+.datepicker--buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.datepicker--button:hover {
+  background: none;
+  cursor: pointer;
+}
+
+.datepicker--pointer {
+  display: none;
+}
+
+.datepicker--days-names {
+  margin-top: 33px;
+}
+
+.datepicker--cell.datepicker--cell-day {
+  margin-top: 10px;
+  margin-bottom: -8px;
+  height: 38px;
+}
+
+.datepicker--buttons {
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+.datepicker--cell.-current-.-focus- {
+  color: #ffffff; }
+
+/*наведение мыши на ячейку*/
+.datepicker--cell.-range-to-,
+.datepicker--cell.-range-from- {
+  background: rgba(224, 209, 255, 0.5);
+  border: none;
+  border-radius: 0% 50% 50% 0%; 
+}
+
+.datepicker--cell.-range-from- {
+  border: none;
+  border-radius: 50% 0% 0% 50%; 
+}
+
+.datepicker--nav-title {
+  pointer-events: none;
+}
+
+.datepicker--button-use {
+  cursor: pointer;
+  font-family: $main-font, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+div[data-action="prev"] { 
+  margin-left: -10px;
+}
+
+div[data-action="next"] { 
+  margin-right: -8px;
+}

@@ -1,0 +1,6 @@
+mixin datepicker(id, oneLabel, addInput, twoLabel)
+	label.date-picker__label.field--select= oneLabel
+		input.date-picker__input.date-picker__input--arrival(type="text" id= id placeholder="ДД.ММ.ГГГГ" spellcheck="false" redonly) 
+	if addInput
+		label.date-picker__label.field--select= twoLabel
+			input.date-picker__input.date-picker__input--departure(type="text" placeholder="ДД.ММ.ГГГГ" spellcheck="false" redonly) 

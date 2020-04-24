@@ -1,0 +1,36 @@
+@import '../../style/global.scss';
+@import '../../components/date-picker/date-picker.scss';
+
+.date-picker__input {
+
+	margin-top: 200px;
+
+	display: inline-block;
+	width: 200px;
+}
+
+.date-picker__label {
+  position: relative;
+}
+
+.date-picker__input {
+  margin-top: 6px;
+}
+.date-picker__label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: url('./images/sprite.png') no-repeat;
+  background-position: -2px -314px
+}
+//удалить
+
+
+.date-picker__input--departure {
+  display: none;
+}
+

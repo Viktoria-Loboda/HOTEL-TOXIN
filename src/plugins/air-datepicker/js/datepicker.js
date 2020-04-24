@@ -345,12 +345,10 @@
                     break;
             }
 
-/*----------------------------------------------------------------*/
             var text = document.querySelector('.datepicker--nav-title').textContent;
             text = text.replace(",", "");
 
             document.querySelector('.datepicker--nav-title').textContent = text;
-
         },
 
         prev: function () {
@@ -370,7 +368,7 @@
                     if (o.onChangeDecade) o.onChangeDecade(this.curDecade);
                     break;
             }
-/*----------------------------------------------------------------*/
+
             var text = document.querySelector('.datepicker--nav-title').textContent;
             text = text.replace(",", "");
 
@@ -1684,8 +1682,6 @@
                 'data-month="' + date.getMonth() + '" ' +
                 'data-year="' + date.getFullYear() + '">' + content.html + '</div>';
         },
-
-        /*--------=========================================*/
 
         /**
          * Generates months html
