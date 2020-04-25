@@ -3,6 +3,11 @@
 @import './components/variables.scss';
 @import './components/style-buttons.scss';
 
+body {
+	min-width: 320px;
+	max-width: 1990px;
+}
+
 .visually-hidden {
 	display: none;
 }

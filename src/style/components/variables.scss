@@ -9,7 +9,7 @@ $green: #6FCF97;
 
 //--------------------------------------------FONTS
 $main-font: 'Montserrat', 'Helvetica';
-$caption-font: 'Quicksand', 'Geneva';
+$caption-font: 'Quicksand', 'Montserrat';
 
 @mixin fonts-for-h1 {
 	font-family: $caption-font, sans-serif;

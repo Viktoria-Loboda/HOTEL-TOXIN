@@ -232,6 +232,7 @@ input[type="radio"]:checked + label:after {
 	color: $purple;
 	background: transparent;
 	border-radius: 22px;
+	text-decoration: none;
 
 	border: 2px solid $purple;
 	cursor: pointer;

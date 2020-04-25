@@ -1,0 +1,10 @@
+include ../date-picker/date-picker.pug
+include ../dropdown/dropdown.pug
+
+div.search-rooms
+	h1.search-rooms__caption Найдём номера под ваши пожелания
+	div.date-picker(id="wrapper-date-picker")
+		+datepicker('date-picker', 'прибытие', true, 'выезд')
+	div.dropdown(id="wrapper-dropdown")
+		+dropdown('Гости', 'Сколько гостей', 'Взрослые', '0', 'Дети', '0', 'Младенцы', '0', true)
+	a.btn.btn--theme-purple.search-rooms__submit(href="#") Подобрать номер

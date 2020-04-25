@@ -1,5 +1,3 @@
-include ../../components/date-picker/date-picker.pug
-
 doctype html
 html(lang="ru")
 	head
@@ -18,7 +16,6 @@ html(lang="ru")
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		title Document
 	body 
-		div.date-picker-wrapper(id="date-picker-wrapper")
-			+datepicker('date-picker', 'Прибытие', true, 'Выезд')
-		div.date-picker-wrapper(id="date-picker-wrapper-two")
-			+datepicker('date-picker-two', 'Прибытие', false, 'Выезд')
+		//- include ../../components/search-room/search-room.pug
+		//- include ../../components/registration/registration.pug
+		include ../../components/login/login.pug

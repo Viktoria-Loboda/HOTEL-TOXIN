@@ -1,24 +1,24 @@
 import './cards.scss';
-import DatePicker from '../../components/date-picker/date-picker.js';
+// import DatePicker from '../../components/date-picker/date-picker.js';
 
-$('#date-picker').datepicker({
-	range: true,
-	inline: false,
-	clearButton: true,
-	disableNavWhenOutOfRange: false,
-	minDate: new Date()
-});
+// $('#date-picker').datepicker({
+// 	range: true,
+// 	inline: false,
+// 	clearButton: true,
+// 	disableNavWhenOutOfRange: false,
+// 	minDate: new Date()
+// });
 
-let myDatepicker = $('#date-picker').datepicker().data('datepicker');
-let datepicker = new DatePicker('date-picker-wrapper', myDatepicker);
+// let myDatepicker = $('#date-picker').datepicker().data('datepicker');
+// let datepicker = new DatePicker('wrapper-date-picker', myDatepicker);
 
-$('#date-picker-two').datepicker({
-	range: true,
-	inline: false,
-	clearButton: true,
-	disableNavWhenOutOfRange: false,
-	minDate: new Date()
-});
+// import Dropdown from '../../components/dropdown/dropdown.js';
 
-let myDatepickers = $('#date-picker-two').datepicker().data('datepicker');
-let datepickers = new DatePicker('date-picker-wrapper-two', myDatepickers);
+// let dropdownWords = {
+//   row1: ['взрослый', 'взрослых', 'взрослых'],
+//   row2: ['ребенок', 'детей', 'детей'],
+//   row3: ['младенец', 'младенцев', 'младенцев'],
+//   phrase: 'Сколько гостей'
+// }
+
+// let newDropdown = new Dropdown('wrapper-dropdown', dropdownWords);

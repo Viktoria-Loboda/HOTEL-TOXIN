@@ -6,9 +6,7 @@ export default class DatePicker {
 		this.oneInput = wrapper.querySelector('.date-picker__input--arrival');
 		this.twoInput = wrapper.querySelector('.date-picker__input--departure');
 		this.btnUse;
-
-		console.log(this.twoInput);
-
+		
 		this.myDatePicker = myDatePicker;
 		this.datePickerContent = this.myDatePicker.$content[0];
 		this.datePickerNav = this.myDatePicker.$nav[0].querySelector('.datepicker--nav-title');
