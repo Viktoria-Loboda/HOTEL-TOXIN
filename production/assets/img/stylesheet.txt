@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Vector {
+    width: 10px;
+    height: 11px;
+    background-position: -20px -20px;
+}
+
+.sprite-_ {
+    width: 22px;
+    height: 22px;
+    background-position: -70px -20px;
+}
+
+.sprite-_ {
+    width: 24px;
+    height: 20px;
+    background-position: -132px -20px;
+}
+
+.sprite-_ {
+    width: 22px;
+    height: 22px;
+    background-position: -196px -20px;
+}
+
+.sprite-arrow_forward {
+    width: 18px;
+    height: 18px;
+    background-position: -258px -20px;
+}
+
+.sprite-arrow_forward-_-_____ {
+    width: 18px;
+    height: 18px;
+    background-position: -316px -20px;
+}
+
+.sprite-arrow_forward-_1_ {
+    width: 18px;
+    height: 18px;
+    background-position: -374px -20px;
+}
+
+.sprite-arrow_forward-_1_-_-_____ {
+    width: 18px;
+    height: 18px;
+    background-position: -432px -20px;
+}
+
+.sprite-d {
+    width: 8px;
+    height: 12px;
+    background-position: -490px -20px;
+}
+
+.sprite-d-_-_____ {
+    width: 8px;
+    height: 12px;
+    background-position: -538px -20px;
+}
+
+.sprite-expand_more {
+    width: 8px;
+    height: 12px;
+    background-position: -586px -20px;
+}
+
+.sprite-expand_more-_-_____ {
+    width: 8px;
+    height: 12px;
+    background-position: -634px -20px;
+}
+
+.sprite-expand_mores {
+    width: 12px;
+    height: 8px;
+    background-position: -682px -20px;
+}
+
+.sprite-favorite {
+    width: 10px;
+    height: 8px;
+    background-position: -734px -20px;
+}
+
+.sprite-favorite_border {
+    width: 10px;
+    height: 8px;
+    background-position: -784px -20px;
+}
+
+.sprite-insert_emoticon {
+    width: 40px;
+    height: 40px;
+    background-position: -834px -20px;
+}
+
+.sprite-location_city {
+    width: 36px;
+    height: 38px;
+    background-position: -914px -20px;
+}
+
+.sprite-star {
+    width: 21px;
+    height: 19px;
+    background-position: -990px -20px;
+}
+
+.sprite-star_border {
+    width: 21px;
+    height: 19px;
+    background-position: -1051px -20px;
+}
+
+.sprite-whatshot {
+    width: 34px;
+    height: 43px;
+    background-position: -1112px -20px;
+}

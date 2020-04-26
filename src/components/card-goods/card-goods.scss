@@ -1,9 +1,4 @@
 .card-goods {
-	margin: 0 auto;
-	margin-top: 220px;
-}
-
-.card-goods {
 	max-width: 270px;
 
 	background: #FFFFFF;
@@ -12,7 +7,8 @@
 	cursor: pointer;
 
 	&__main {
-		padding: 25px 20px 17px 20px;
+		padding: 10px 20px 17px 20px;
+		padding-bottom: 5px;
 	}
 
 	&__column--top {
@@ -21,14 +17,15 @@
 	}
 
 	&__number-room {
+		font-family: $caption-font, sans-serif;
 		font-style: normal;
-		font-weight: bold;
+		font-weight: 600;
 		font-size: 14px;
 		line-height: 17px;
 		color: #1F2041;
 
 		& .value {
-			font-size: 17px;
+			font-size: 20px;
 		}
 
 		& .status {
@@ -37,8 +34,9 @@
 	}
 
 	&__price-room {
+		font-family: $caption-font, sans-serif;
 		font-style: normal;
-		font-weight: bold;
+		font-weight: 600;
 		font-size: 14px;
 		line-height: 18px;
 		color: rgba(31, 32, 65, 0.5);
@@ -52,7 +50,7 @@
 	&__column--bottom {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 12px;
+		margin-top: 0px;
 		border-top: 1px solid rgba(31, 32, 65, 0.1);
 	}
 
@@ -84,7 +82,12 @@
   }
 
   &__comments {
-  	margin-top: 7px;
+  	margin-top: 11px;
+  	font-family: $caption-font, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		color: rgba(31, 32, 65, 0.5);
   }
 }
 
@@ -123,7 +126,7 @@
 		position: absolute;
 		z-index: 2;
 		right: 15px;
-		bottom: 5px;
+		bottom: 11px;
 	}
 
 	&__dots-item {
@@ -137,21 +140,5 @@
 
 	&__dots-item.active {
 		background: #fff;
-	}
-}
-
-.rating {
-	display: flex;
-	margin-top: 10px;
-
-	&__item {
-		width: 24px;
-		height: 24px;
-		background: url('../img/star_border.png') no-repeat;
-		cursor: pointer;
-	}
-
-	&__item.active {
-		background: url('../img/star.png') no-repeat;
 	}
 }

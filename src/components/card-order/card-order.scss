@@ -1,0 +1,168 @@
+.card-order {
+	font-family: $main-font, sans-serif;
+	max-width: 380px;
+	padding: 30px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+
+	&__row {
+		margin-top: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__number-room {
+		font-family: $caption-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 17px;
+		color: $black;
+
+		& .value {
+			font-size: 24px;
+		}
+
+		& .status-room {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 15px;
+			text-transform: uppercase;
+			color: $purple;
+		}
+	}
+
+	&__price-for-day {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 18px;
+		color: $black-50;
+
+		& .small-text {
+			font-weight: 400;
+			font-size: 12px;
+		}
+	}
+
+	&__date-picker {
+		margin-top: 5px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		& .input-wrapper {
+			position: relative;
+			width: 150px;
+			color: red;
+		}
+
+		& .input-wrapper::before {
+			content: '';
+			position: absolute;
+			top: 32px;
+			right: 10px;
+			display: block;
+			width: 20px;
+			height: 20px;
+			background: url('../img/sprite.png') no-repeat;
+			background-position: -678px -14px;
+		}
+	}
+
+	&__dropdown {
+		width: 100%;
+		margin-top: 20px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 32px;
+    	right: 10px;
+			width: 20px;
+			height: 20px;
+			background: url('../img/sprite.png') no-repeat;
+			background-position: -678px -14px;
+		}
+	}
+
+	&__row--final-price {
+		margin-top: 25px;
+		font-family: $caption-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 24px;
+		color: $black;
+
+		& p {
+			margin: 0;
+		}
+
+		& .border-bottom {
+			flex-grow: 1;
+			position: relative;
+    	top: -5px;
+			border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+		}
+	}
+
+	&__submit {
+		width: 100%;
+		display: block;
+		margin-top: 20px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			right: 10px;
+			width: 25px;
+			height: 25px;
+			background: url('../img/sprite.png') no-repeat;
+			background-position: -371px -15px;
+		}
+	}
+}
+
+.calc {
+	margin-top: 15px;
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $black-75;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px;
+
+		& p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		& p:nth-child(1) {
+			position: relative;
+			width: 75%;
+		}
+	}
+
+	& .add-info {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20px;
+		height: 20px;
+		background: url('../img/add-info.png') no-repeat;
+		background-size: 20px;
+	}
+}

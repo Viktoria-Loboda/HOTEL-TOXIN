@@ -1,0 +1,46 @@
+include ../dropdown/dropdown.pug
+
+div.card-order
+	form.card-order__form(method="post" action="#")
+		div.card-order__row 
+			p.card-order__number-room № 
+				span.value 888
+				span.status-room  Люкс
+			p.card-order__price-for-day 9 990
+				span.currency ₽
+				spam.small-text в сутки
+		div.date-picker.card-order__date-picker(id="order-card__date-picker")
+			div.input-wrapper
+				label.date-picker__label.field--select прибытие
+					input.date-picker__input.date-picker__input--arrival(type="text" id= "order-date-picker" placeholder="ДД.ММ.ГГГГ" spellcheck="false" redonly) 
+			div.input-wrapper
+				label.date-picker__label.field--select выезд
+					input.date-picker__input.date-picker__input--departure(type="text" placeholder="ДД.ММ.ГГГГ" spellcheck="false" redonly)
+		div.dropdown.card-order__dropdown(id="order-card___wrapper-dropdown")
+			+dropdown('Гости', '3 гостя', 'Взрослые', '2', 'Дети', '1', 'Младенцы', '0', true)
+		div.calc.card-order__calc
+			div.calc__row
+				p.calc__price-day 9 990
+					span.currency ₽
+					span  x
+					span.count-days  4 суток
+				p.calc__total-price 39 960
+					span.currency ₽
+			div.calc__row
+				p.calc__price-service Сбор за услуги: 
+					span.discount скидка <span class="value">2 179</span>
+					span.currency ₽
+					span.add-info
+				p.calc__total-price-service 0
+					span.currency ₽
+			div.calc__row
+				p.calc__price-add-service Сбор за дополнительные<br> услуги
+					span.add-info
+				p.calc__total-price-add-service 300
+					span.currency ₽
+		div.card-order__row.card-order__row--final-price
+			p.text Итого
+			p.border-bottom
+			p.total-price 38 081
+				span.currency ₽
+		button.btn.btn--theme-purple.card-order__submit(type="submit") Забронировать

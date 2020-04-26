@@ -4,3 +4,76 @@
 @import '../../components/search-room/search-room.scss';
 @import '../../components/registration/registration.scss';
 @import '../../components/login/login.scss';
+@import '../../components/card-order/card-order.scss';
+@import '../../components/star-rating/star-rating.scss';
+@import '../../components/card-goods/card-goods.scss';
+
+body {
+	width: 1440px;
+	margin: 0 9.7%;
+}
+
+.column-wrapper {
+	display: flex;
+	padding-top: 150px;
+	padding-bottom: 140px;
+	position: relative;
+
+	& .wrapper__logo {
+		position: absolute;
+		top: 31px;
+    left: 31px;
+	}
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.column-1 {
+	margin-left: 140px;
+
+	& .registration {
+		margin-top: 40px;
+	}
+
+	& .dropdown {
+		position: relative;
+	}
+
+	& .dropdown__counter {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+		background: white;
+	}
+}
+
+.column-2 {
+	margin-left: 40px;
+
+	& .card-order {
+		width: 380px;
+	}
+
+	& .module-login {
+		margin-top: 38px;
+	}
+}
+
+.column-3 {
+	margin-left: 40px;
+
+	& .date-picker__input {
+		display: none;
+	}
+
+	& .datepicker {
+		margin-top: 0;
+	}
+
+	& .card-goods {
+		margin-top: 40px;
+	}
+}

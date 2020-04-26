@@ -1,5 +1,6 @@
 .dropdown {
 	width: 266px;
+	position: relative;
 
 	&__input-wrapper {
 		position: relative;
@@ -47,6 +48,8 @@
 }
 
 .counter {
+	position: absolute;
+	z-index: 1;
 	width: 100%;
 	padding: 5px 7px 7px 15px;
 	box-sizing: border-box;
@@ -61,6 +64,7 @@
 	text-transform: uppercase;
 	color: $black;
 	box-shadow: 0px 10px 20px $black-05;
+	background: white;
 
 	&__row {
 		display: flex;
