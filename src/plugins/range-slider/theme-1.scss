@@ -1,0 +1,142 @@
+/*обычный*/
+.slider__line {
+  position: relative;
+  
+  display: inline-block;
+  width: 310px;
+  height: 5px;
+  
+  background: #e5e5e5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider__thumb-one,
+.slider__thumb-two {
+  position: absolute;
+  top: -8px;
+
+  width: 20px;
+  height: 20px;
+  
+  border-radius: 20px;
+  background: #e75735;
+  cursor: pointer;
+
+  z-index: 1;
+}
+
+.slider__thumbs-merge {
+  width: 10px;
+  border-radius: 20px 0 0 20px;
+  background-color: #e75735;
+
+  z-index: 2;
+}
+
+.slider__thumb-two {
+  right: 20px;
+}
+
+.slider__range-line {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 240px;
+  height: 5px;
+
+  background-color: #e75735;
+  border-radius: 0px 0 0 0px;
+}
+
+.slider__hint-one,
+.slider__hint-two {
+  position: absolute;
+  top: -30px;
+  left: -7px; 
+  min-width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  background: #e75735;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 2px;
+  font-weight: bold;
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.slider__hint-one {
+  z-index: 3;
+}
+
+.slider__hint-two {
+  z-index: 0;
+}
+
+.slider__hint-one.big-width {
+  position: absolute;
+  left: -13px;
+}
+
+/*вертикальный*/
+.vert .slider__line {
+  position: relative;
+
+  display: inline-block;
+  width: 5px;
+  height: 310px;
+  
+  background: #e5e5e5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.vert .slider__thumb-one,
+.vert .slider__thumb-two {
+  position: absolute;
+  left: -7px;
+  top: 100px;
+
+  width: 20px;
+  height: 20px;
+  
+  border-radius: 20px;
+  background: #e75735;
+  cursor: pointer;
+} 
+
+.vert .slider__thumb-two {
+  top: 200px;
+}
+
+.vert .slider__range-line {
+  position: absolute;
+  top: 0px;
+  left: 0; 
+  right: 5px;
+  width: 5px;
+  height: 240px;
+
+  background-color: #e75735;
+  border-radius: 0px 0 0 0px;
+}
+
+.vert .slider__hint-one,
+.vert .slider__hint-two {
+  top: -2px;
+  left: 24px;
+}
+
+.vert .slider__thumbs-merge {
+  height: 12px;
+  border-radius: 10px 10px 0 0;
+  background-color: #e75735;
+
+  z-index: 2;
+}

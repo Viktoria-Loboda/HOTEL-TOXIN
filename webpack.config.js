@@ -14,6 +14,7 @@ module.exports = {
 	entry: {
 		colorsFonts: `${PATHS.src}/pages/colorsFonts/colorsFonts.js`,
 		formElements: `${PATHS.src}/pages/formElements/formElements.js`,
+		headerAndFooter: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.js`,
 		cards: `${PATHS.src}/pages/cards/cards.js`
 	},
 	output: {
@@ -73,6 +74,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: `${PATHS.src}/pages/cards/cards.pug`,
 			filename: 'cards.html',
+			inject: false
+		}),
+		new HtmlWebpackPlugin({
+			template: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.pug`,
+			filename: 'headerAndFooter.html',
 			inject: false
 		}),
 		new CopyWebpackPlugin([
