@@ -58,7 +58,7 @@ label.field--subscribe {
 		width: 36px;
 		height: 28px;
 		background: url('../img/sprite.png') no-repeat;
-		background-position: -244px -17px;
+		background-position: -195px -20px;
 	}
 }
 
@@ -219,33 +219,33 @@ input[type="radio"]:checked + label:after {
   background-position: -729px -15px;
 }
 
-.btn {
-	display: inline-block;
-	padding: 12px 18px;
-	font-family: $main-font, sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 15px;
-	text-align: center;
-	text-transform: uppercase;
-	color: $purple;
-	background: transparent;
-	border-radius: 22px;
-	text-decoration: none;
+// .btn {
+// 	display: inline-block;
+// 	padding: 12px 18px;
+// 	font-family: $main-font, sans-serif;
+// 	font-style: normal;
+// 	font-weight: 600;
+// 	font-size: 12px;
+// 	line-height: 15px;
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	color: $purple;
+// 	background: transparent;
+// 	border-radius: 22px;
+// 	text-decoration: none;
 
-	border: 2px solid $purple;
-	cursor: pointer;
-	box-sizing: border-box;
-}
+// 	border: 2px solid $purple;
+// 	cursor: pointer;
+// 	box-sizing: border-box;
+// }
 
-.btn--theme-purple {
-	padding: 15px 20px;
-	color: #ffffff;
-	border: none;
-	border-radius: 24px;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
+// .btn--theme-purple {
+// 	padding: 15px 20px;
+// 	color: #ffffff;
+// 	border: none;
+// 	border-radius: 24px;
+// 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+// }
 
 .btn:visited,
 .btn:active {

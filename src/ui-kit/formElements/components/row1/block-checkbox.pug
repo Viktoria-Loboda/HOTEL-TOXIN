@@ -1,0 +1,41 @@
+div.column.column--checkbox
+	div.row-checkbox
+		p.row__caption checkbox buttons
+		input(type="checkbox" value="smoke" id="smoke")
+		label.row__label(for="smoke") Можно курить
+		input(type="checkbox" value="pets" id="pets" checked)
+		label.row__label(for="pets") Можно с питомцами
+		input(type="checkbox" value="guests" id="guests" checked)
+		label.row__label(for="guests") Можно пригласить гостей <br>(до 10 человек)
+	div.row-radio
+		p.row__caption radio buttons
+		div.wrapper-flex
+			input(type="radio" value="man" name="people" id="man" checked)
+			label(for="man") Мужчина
+			input(type="radio" value="woman" name="people" id="woman")
+			label(for="woman") Женщина
+	div.row-toggle
+		p.row__caption toggle
+		input.btn--toggle(type="checkbox" id="subscribe" checked)
+		label(for="subscribe") Получать спецпредложения
+		input.btn--toggle(type="checkbox" id="subscribe-2")
+		label(for="subscribe-2") Получать спецпредложения
+	div.row-btn-like
+		p.row__caption like button
+		button.btn--like 2
+		button.btn--like.btn--like-active 12
+	div.row-rate-button
+		p.row__caption rate button
+		div.wrapper-flex
+			div.rating
+				div.rating__item.active(data-rate="1")
+				div.rating__item.active(data-rate="2")
+				div.rating__item.active(data-rate="3")
+				div.rating__item.current-active.active(data-rate="4")
+				div.rating__item(data-rate="5")
+			div.rating
+				div.rating__item.active(data-rate="1")
+				div.rating__item.active(data-rate="2")
+				div.rating__item.active(data-rate="3")
+				div.rating__item.active(data-rate="4")
+				div.rating__item.current-active.active(data-rate="5")

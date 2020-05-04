@@ -1,0 +1,52 @@
+.column--inputs {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 320px;
+
+	& label {
+		width: 320px;
+		position: relative;
+		margin-bottom: 20px;
+
+		& span {
+			@include fonts-for-h3();
+			color: $black-50;
+			font-weight: 400;
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+
+.row-hover input {
+	color: $black-75;
+	border: 1px solid $black-50;
+}
+
+.row-date-dropdown {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 17px;
+
+	& label {
+		width: 150px;
+	}
+}
+
+.row-filter-date {
+	margin-top: 17px;
+
+	& label {
+		width: 267px;
+	}
+}
+
+.row-subscribe {
+	margin-top: 20px;
+
+	& label {
+		width: 267px;
+	}
+}

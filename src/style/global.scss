@@ -3,9 +3,78 @@
 @import './components/variables.scss';
 @import './components/style-buttons.scss';
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
 body {
+	margin: 0;
+	padding: 0;
 	min-width: 320px;
-	max-width: 1990px;
+	max-width: 1920px;
+	height: 100%;
+
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: $black-75;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer-wrapper {
+	flex: 0 0 auto;
+}
+
+// на исправление
+
+a {
+	font-size: 1rem;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.7em 1.5em;
+
+	font-family: $main-font, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.85rem;
+	line-height: 1.07rem;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $purple;
+	background: transparent;
+	border-radius: 1.5em;
+	border: 0.14em solid $purple;
+	text-decoration: none;
+
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.btn--theme-purple {
+	padding: 0.9em 1.7em;
+
+	font-size: 0.85rem;
+	color: #ffffff;
+	
+	border: none;
+	border-radius: 1.8em;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
 .visually-hidden {

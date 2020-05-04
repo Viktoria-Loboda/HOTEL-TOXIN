@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Toxin
+		include ../meta.pug
+		include ../favicons.pug
+		script(src="./assets/js/main.js" defer)
+		link(rel="stylesheet" type="text/css" href="./assets/style/main.css")
+	body
+		div.wrapper
+			div.content
+				include ../../components/header/header.pug
+			div.footer-wrapper
+				include ../../components/footer/footer.pug

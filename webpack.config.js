@@ -12,10 +12,11 @@ const PATHS = {
 
 module.exports = {
 	entry: {
-		colorsFonts: `${PATHS.src}/pages/colorsFonts/colorsFonts.js`,
-		formElements: `${PATHS.src}/pages/formElements/formElements.js`,
-		headerAndFooter: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.js`,
-		cards: `${PATHS.src}/pages/cards/cards.js`
+		main: `${PATHS.src}/pages/main/main.js`,
+		// colorsFonts: `${PATHS.src}/pages/colorsFonts/colorsFonts.js`,
+		// formElements: `${PATHS.src}/pages/formElements/formElements.js`,
+		// headerAndFooter: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.js`,
+		// cards: `${PATHS.src}/pages/cards/cards.js`
 	},
 	output: {
 		filename: `${PATHS.assets}js/[name].js`,
@@ -62,25 +63,30 @@ module.exports = {
 			filename: `${PATHS.assets}style/[name].css`
 		}),
 		new HtmlWebpackPlugin({
-			template: `${PATHS.src}/pages/colorsFonts/colorsFonts.pug`,
-			filename: 'colorsFonts.html',
+			template: `${PATHS.src}/pages/main/main.pug`,
+			filename: 'main.html',
 			inject: false
 		}),
-		new HtmlWebpackPlugin({
-			template: `${PATHS.src}/pages/formElements/formElements.pug`,
-			filename: 'formElements.html',
-			inject: false
-		}),
-		new HtmlWebpackPlugin({
-			template: `${PATHS.src}/pages/cards/cards.pug`,
-			filename: 'cards.html',
-			inject: false
-		}),
-		new HtmlWebpackPlugin({
-			template: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.pug`,
-			filename: 'headerAndFooter.html',
-			inject: false
-		}),
+		// new HtmlWebpackPlugin({
+		// 	template: `${PATHS.src}/pages/colorsFonts/colorsFonts.pug`,
+		// 	filename: 'colorsFonts.html',
+		// 	inject: false
+		// }),
+		// new HtmlWebpackPlugin({
+		// 	template: `${PATHS.src}/pages/formElements/formElements.pug`,
+		// 	filename: 'formElements.html',
+		// 	inject: false
+		// }),
+		// new HtmlWebpackPlugin({
+		// 	template: `${PATHS.src}/pages/cards/cards.pug`,
+		// 	filename: 'cards.html',
+		// 	inject: false
+		// }),
+		// new HtmlWebpackPlugin({
+		// 	template: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.pug`,
+		// 	filename: 'headerAndFooter.html',
+		// 	inject: false
+		// }),
 		new CopyWebpackPlugin([
 			{ from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
 			{ from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`},

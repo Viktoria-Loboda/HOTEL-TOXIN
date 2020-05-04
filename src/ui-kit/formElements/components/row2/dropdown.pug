@@ -1,0 +1,99 @@
+div.column.column--dropdown
+	div.column--left
+		div.dropdown.dropdown--furniture(id="dropdown")
+			label.dropdown__label.field--select dropdown <span>default</span>
+				input.dropdown__input(type="text" value="2 спальни, 2 кровати..." readonly)
+			div.counter.dropdown__counter.visually-hidden
+				div.counter__row
+					span.counter__row-name Спальни
+					div.counter__inner
+						span.counter__btn.counter__btn--minus -
+						span.counter__row-quantity 2
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Кровати
+					div.counter__inner
+						span.counter__btn.counter__btn--minus -
+						span.counter__row-quantity 2
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Ванные комнаты
+					div.counter__inner
+						span.counter__btn.counter__btn--minus.disabled -
+						span.counter__row-quantity 0
+						span.counter__btn.counter__btn--plus + 
+
+		div.dropdown.dropdown--furniture(id="dropdown-furniture")
+			label.dropdown__label.field--select dropdown <span>expanded</span>
+				input.dropdown__input.active(type="text" value="2 спальни, 2 кровати..." readonly)
+			div.counter.dropdown__counter
+				div.counter__row
+					span.counter__row-name Спальни
+					div.counter__inner
+						span.counter__btn.counter__btn--minus -
+						span.counter__row-quantity 2
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Кровати
+					div.counter__inner
+						span.counter__btn.counter__btn--minus -
+						span.counter__row-quantity 2
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Ванные комнаты
+					div.counter__inner
+						span.counter__btn.counter__btn--minus.disabled -
+						span.counter__row-quantity 0
+						span.counter__btn.counter__btn--plus + 
+	div.column--rigth
+		div.dropdown.dropdown--guests(id="dropdown-guests")
+			label.dropdown__label.field--select dropdown 
+				input.dropdown__input.active(type="text" value="Сколько гостей" readonly)
+			div.counter.dropdown__counter
+				div.counter__row
+					span.counter__row-name Взрослые
+					div.counter__inner
+						span.counter__btn.counter__btn--minus.disabled -
+						span.counter__row-quantity 0
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Дети
+					div.counter__inner
+						span.counter__btn.counter__btn--minus.disabled -
+						span.counter__row-quantity 0
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Младенцы
+					div.counter__inner
+						span.counter__btn.counter__btn--minus.disabled -
+						span.counter__row-quantity 0
+						span.counter__btn.counter__btn--plus + 
+				div.dropdown__wrapper-btn
+					button.dropdown__btn.dropdown__btn--clear очистить
+					button.dropdown__btn.dropdown__btn--use применить
+
+		div.dropdown.dropdown--guests(id="dropdown-guests-two")
+			label.dropdown__label.field--select dropdown 
+				input.dropdown__input.active(type="text" value="3 гостя" readonly)
+			div.counter.dropdown__counter
+				div.counter__row
+					span.counter__row-name Взрослые
+					div.counter__inner
+						span.counter__btn.counter__btn--minus -
+						span.counter__row-quantity 2
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Дети
+					div.counter__inner
+						span.counter__btn.counter__btn--minus -
+						span.counter__row-quantity 1
+						span.counter__btn.counter__btn--plus + 
+				div.counter__row
+					span.counter__row-name Младенцы
+					div.counter__inner
+						span.counter__btn.counter__btn--minus.disabled -
+						span.counter__row-quantity 0
+						span.counter__btn.counter__btn--plus + 
+				div.dropdown__wrapper-btn
+					button.dropdown__btn.dropdown__btn--clear очистить
+					button.dropdown__btn.dropdown__btn--use применить

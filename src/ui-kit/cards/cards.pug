@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		<link rel="stylesheet" type="text/css" href="./assets/style/cards.css">
+		<script src="./assets/js/cards.js" defer></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="./static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="./static/favicons/site.webmanifest">
+		<link rel="mask-icon" href="./static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="keywords" content="отель Токсин, hotel Toxin, отель Toxin, забронировать номер, снять комнату, забронировать отель, забронировать гостинницу, забронировать номер в отеле, забронировать номер в гостиннице"/>
+		<meta name="description" content="Сайт бронирование номеров в отеле Toxin">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		title Document
+	body 
+		include ../../components/date-picker/date-picker.pug
+		div.column-wrapper
+			img.wrapper__logo(src="./assets/img/group.png", alt="logo")
+			div.column.column-1
+				include ../../components/search-room/search-room.pug
+				include ../../components/registration/registration.pug
+			div.column.column-2
+				include ../../components/card-order/card-order.pug
+				include ../../components/login/login.pug
+			div.column.column-3
+				div.date-picker(id="wrapper-date-pickers")
+					+datepicker('date-pickers', '', false, '')
+				include ../../components/card-goods/card-goods.pug
+				div.card-goods
+					header.slide-goods.card-goods__slide-goods
+						div.slide-goods__item 
+							img(src="./assets/img/goods-image/image-4.jpg" alt="Слайд-1" width="270px" height="152px")
+						div.slide-goods__item 
+							img(src="./assets/img/goods-image/image-2.jpg" alt="Слайд-2" width="270px" height="152px")
+						div.slide-goods__item 
+							img(src="./assets/img/goods-image/image-3.jpg" alt="Слайд-3" width="270px" height="152px")
+						div.slide-goods__item 
+							img(src="./assets/img/goods-image/image.jpg" alt="Слайд-3" width="270px" height="152px")
+						a.slide-goods__btn.slide-goods__btn--next
+						a.slide-goods__btn.slide-goods__btn--prev
+						div.slide-goods__dots
+							span.slide-goods__dots-item.active(id="1")
+							span.slide-goods__dots-item(id="2")
+							span.slide-goods__dots-item(id="3")
+							span.slide-goods__dots-item(id="4")
+					div.card-goods__main
+						div.card-goods__column.card-goods__column--top
+							p.card-goods__number-room № 
+								span.value 840
+								span.status  Люкс
+							p.card-goods__price-room 9 990<span class="currency">₽</span>
+								b  в сутки
+						div.card-goods__column.card-goods__column--bottom
+							div.rating.card-goods__rating
+								div.rating__item.active(data-rate="1")
+								div.rating__item.active(data-rate="2")
+								div.rating__item.active(data-rate="3")
+								div.rating__item.active.current-active(data-rate="4")
+								div.rating__item(data-rate="5")
+							p.card-goods__comments <b>65</b> Отзывов

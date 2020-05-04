@@ -1,0 +1,33 @@
+.checkbox-buttons {
+  margin-left: 15.5%;
+
+	& .title {
+		font-family: $main-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: $black;
+	}
+
+	& .checkbox__label {
+		font-family: $main-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 18px;
+		color: $black-75;
+		margin-top: 16px;
+    margin-bottom: -7px;
+
+		& span {
+			font-family: $main-font, sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 14px;
+			color: $black-50;
+		}
+	}
+}

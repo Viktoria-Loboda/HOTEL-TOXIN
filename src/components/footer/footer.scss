@@ -1,214 +1,240 @@
 .footer {
-  background: #ffffff;
+  &__row {
+    border-top: 1px solid $black-25;
+  }
 
   &__row--top {
-    padding: 50px 9.7%;
+    padding: 7% 9.7%;
   }
 
   &__row--bottom {
-    padding: 26px 9.7%;
-    border-top: 1px solid rgba(31, 32, 65, 0.25);
+    // padding: 1.8% 9.7%;    
+    padding: 20px 9.7%;
   }
 
-  &__logo > img {
-    width: 105px;
-    height: 40px;
+  &__inner {
+    text-align: center;
+  }
+
+  &__logo {
+    width: 155px;
+    margin: 0 auto;
   }
 
   &__text {
-    font-family: $main-font, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $black-75;
-  }
-
-  &__copyrigth {
-    font-family: $main-font, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $black-75;
-    text-align: center;
+    margin-top: 10px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 400px) {
   .footer {
-    &__row--top {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 100px 9.7%;
-      padding-bottom: 46px;
+    &__inner {
+      text-align: left;
     }
 
+    &__logo {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .footer {
     &__row--bottom {
       display: flex;
       justify-content: space-between;
-      margin-top: 30px;
-      padding-top: 14px;
-      padding-bottom: 12px;
-    }
-
-    &__inner {
-      width: 260px;
     }
   }
 }
 
-.nav {
+@media (min-width: 1100px) {
+  .footer {
+    
+    &__row--top {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 9.7%;
+      padding-top: 104px;
+      padding-bottom: 91px;
+    }
+
+    &__inner {
+      max-width: 260px;
+      margin-right: auto;
+      margin-top: -4px;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .footer {
+    &__nav-site {
+      margin-right: 54px;
+    }
+  }
+}
+
+@media (min-width: 1850px) {
+  .footer {
+    &__inner {
+      max-width: 340px;
+    }
+  }
+}
+
+.nav-site {
+  margin-top: 20px;
+  text-align: center;
+
   &__caption {
-    margin-bottom: 24px;
-    font-family: $main-font, sans-serif;
-    font-style: normal;
+    margin-bottom: 20px;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.85rem;
+    line-height: 1.07rem;
     text-transform: uppercase;
     color: $black;
   }
 
   &__link {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-family: $main-font, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1rem;
+    line-height: 1.2rem;
     color: $black-50;
     text-decoration: none;
   }
 }
 
-@media (min-width: 500px) {
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 510px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .nav {
-    flex-grow: 1;
-    margin-left: 3.5%;
-    
-    &__caption {
-      margin-top: 5px;
-    }
+@media (min-width: 400px) {
+  .nav-site {
+    text-align: left;
 
     &__link {
-      margin-bottom: 20px;    
+      display: inline-block;
+      margin-right: 20px;
     }
   }
 }
 
-// @media (min-width: 1500px) {
-//   .nav {
-//     margin-left: auto;
-//     max-width: 600px;
-//   }
-// }
+@media (min-width: 800px) {
+  .nav-site {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+      display: block;
+      margin-right: 0;
+      margin-top: 21px;
+      margin-bottom: 13px;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .nav-site {
+    margin-top: 0;
+    width: 70%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .nav-site {
+    width: auto;
+
+    &__list {
+      margin-right: 57px;
+    }
+
+    &__list:nth-child(2) {
+      margin-right: 92px;
+    }
+
+    &__list:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}
 
 .subscribe {
+  text-align: center;
+
   &__caption {
-    font-family: $main-font, sans-serif;
-    font-style: normal;
+    margin-bottom: 20px;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.85rem;
+    line-height: 1.07rem;
     text-transform: uppercase;
     color: $black;
   }
 
   &__text {
-    font-family: $main-font, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $black;
+    margin-bottom: 20px;
   }
 
-  & .field--subscribe:before {
-    content: "";
-    top: 10px;
-  } 
+  &__label {
+    max-width: 320px;
+  }
+
+  &__label.field--subscribe:before {
+    content: '';
+    top: 13px;
+    right: 10px;
+  }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .subscribe {
-    
-    &__input {
-      margin-top: 25px;
-    }
-
-    & label,
-    &__input {
-      max-width: 260px;
-    }
+    text-align: left;
   }
 }
 
-@media (min-width: 1000px) {
-  .subscribe {
-    &__caption {
-      margin-top: 5px;
-    }
-  }
-}
-
-@media (min-width: 1150px) {
+@media (min-width: 1100px) {
   .subscribe {
     max-width: 260px;
-    margin-left: 50px;
   }
 }
 
-@media (min-width: 1440px) {
-  .subscribe {
-    margin-left: auto;
-  }
+.copyrigth {
+  text-align: center;
 }
 
 .social {
-  width: 160px;
+  width: 115px;
   margin: 0 auto;
+  margin-top: 10px;
 
   &__btn {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    width: 24px; 
+    height: 24px;
     background: url('../img/sprite.png') no-repeat;
-  }
-
-  &__btn--twitter {
-    background-position: -128px -15px;
-  }
-
-  &__btn--facebook {
-    background-position: -65px -15px;
+    background-position: 0 0;
   }
 
   &__btn--inst {
-    background-position: -190px -15px;
+    background-position: -507px -19px;
+  }
+
+  &__btn--facebook {
+    background-position: -265px -19px;
+  }
+
+  &__btn--twitter {
+    background-position: -968px -19px;
+  }
+
+  &__btn:nth-last-child(1) {
+    margin-right: 0;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .social {
     width: auto;
     margin: 0;
-
-    &__btn {
-      margin: 0;
-      margin-top: 8px;
-      margin-left: 13px;
-    }
   }
 }
