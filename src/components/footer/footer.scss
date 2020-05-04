@@ -1,19 +1,12 @@
 .footer {
-  &__row {
-    border-top: 1px solid $black-25;
-  }
-
+  
   &__row--top {
     padding: 7% 9.7%;
   }
 
   &__row--bottom {
-    // padding: 1.8% 9.7%;    
+    border-top: 1px solid $black-25;   
     padding: 20px 9.7%;
-  }
-
-  &__inner {
-    text-align: center;
   }
 
   &__logo {
@@ -23,12 +16,13 @@
 
   &__text {
     margin-top: 10px;
+    text-align: center;
   }
 }
 
 @media (min-width: 400px) {
   .footer {
-    &__inner {
+    &__text {
       text-align: left;
     }
 
@@ -136,7 +130,7 @@
 @media (min-width: 1100px) {
   .nav-site {
     margin-top: 0;
-    width: 70%;
+    width: 65%;
   }
 }
 

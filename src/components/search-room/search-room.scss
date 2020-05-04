@@ -6,14 +6,15 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   padding: 40px 30px 30px 30px;
+  background: #ffffff;
 
   &__caption {
     margin-top: 0;
     font-family: $caption-font, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
     color: $black;
   }
   
@@ -24,7 +25,8 @@
 
   & .date-picker__label,
   & .date-picker__input {
-    width: 150px;  }
+    width: 150px;  
+  }
 
   & .dropdown {
     width: 100%;
@@ -47,7 +49,7 @@
       width: 30px;
       height: 30px;
       background: url('../img/sprite.png') no-repeat;
-      background-position: -369px -15px;
+      background-position: -146px -15px;
     }
   }
 }
