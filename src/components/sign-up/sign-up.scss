@@ -1,0 +1,89 @@
+.registration {
+	max-width: 380px;
+	padding: 30px;
+	padding-top: 40px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 1.78rem rgba(0, 0, 0, 0.2);
+	border-radius: 0.28rem;
+
+	&__caption {
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-family: $caption-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.64rem;
+		line-height: 2.1rem;
+		color: $black;
+	}
+
+	&__input {
+		margin-bottom: 8px;
+	}
+
+	&__row--gender {
+		margin-top: 10px;
+		margin-top: 15px;
+		display: flex;
+
+		& .registration__label {
+			width: 80px;
+			margin-right: 10px;
+		}
+	}
+
+	&__row--birth-date {
+		margin-top: 27px;
+	}
+
+	&__row--data {
+		margin-top: 23px;
+	}
+
+	&__submit {
+		position: relative;
+		padding: 1.2em 1.4em;
+		font-size: 0.85rem;
+		line-height: 1.07rem;
+		margin-top: 28px;
+		display: block;
+		width: 100%;
+
+		&::before {
+			content: "";
+			position: absolute;
+	    top: 0.35rem;
+	    right: 0.28rem;
+			width: 30px;
+			height: 30px;
+			background: url('../img/sprite.png') no-repeat;
+			background-position: -147px -13px;
+		}
+	}
+
+	&__row--login {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 32px;
+
+		& p {
+			font-family: $main-font, sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.28rem;
+			color: #000000;
+		}
+	}
+
+	&__login {
+		font-size: 0.85rem;
+		line-height: 1.07rem;
+    padding: 1em 2em;
+		border-radius: 2em;
+	}
+}

@@ -1,0 +1,25 @@
+div.registration
+	h1.registration__caption Регистрация аккаунта
+	form.registration__form(method="post" action="/mock-address/change-me")
+		div.registration__row.registration__row--fio
+			input.registration__input(type="text" name="name" placeholder="Имя")
+			input.registration__input(type="text" name="lastname" placeholder="Фамилия")
+		div.registration__row.registration__row--gender
+			input.registration__input(type="radio" value="man" name="people" id="man" checked)
+			label.registration__label(for="man") Мужчина
+			input.registration__input(type="radio" value="woman" name="people" id="woman")
+			label.registration__label(for="woman") Женщина
+		div.registration__row.registration__row--birth-date
+			label(for="birth-date").registration__label Дата рождения
+			input.registration__input(type="text" id="birth-date" placeholder="ДД.ММ.ГГГГ")
+		div.registration__row.registration__row--data
+			label.registration__label Данные для входа в сервис
+			input.registration__input(type="text" name="email" placeholder="Email")
+			input.registration__input(type="password" name="password" placeholder="Пароль")
+		div.registration__row.registration__row--subscribe
+			input.btn--toggle(type="checkbox" id="subscribe")
+			label(for="subscribe") Получать спецпредложения
+		button.btn.btn--theme-purple.registration__submit(type="submit") Перейти к оплате
+		div.registration__row.registration__row--login
+			p Уже есть аккаунт на Toxin 
+			a.btn.registration__login(href="/mock-address/change-me") Войти

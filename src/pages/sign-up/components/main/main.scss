@@ -1,0 +1,14 @@
+@import '../../../../components/sign-up/sign-up.scss';
+
+.sign-up-page {
+	padding-top: 2.08%;
+	padding-bottom: 1.7%;
+	padding-left: 5px;
+  padding-right: 5px;
+	background: url('../img/background.jpg') no-repeat;
+	background-size: cover;
+
+	& .registration {
+		margin: 0 auto;
+	}
+}

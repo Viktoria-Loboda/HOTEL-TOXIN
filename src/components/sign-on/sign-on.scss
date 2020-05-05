@@ -1,0 +1,70 @@
+.module-login {
+	max-width: 380px;
+	padding: 30px;
+	padding-top: 40px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+
+	&__caption {
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-family: $caption-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.7rem;
+		line-height: 2.1rem;
+		color: $black;
+	}
+
+	&__input {
+		margin-bottom: 10px;
+	}
+
+	&__submit {
+		position: relative;
+		padding: 1.2em 1.4em;
+		margin-top: 23px;
+		font-size: 0.85rem;
+		line-height: 1.07rem;
+		margin-top: 23px;
+		display: block;
+		width: 100%;
+
+		&::before {
+			content: "";
+			position: absolute;
+	    top: 0.35rem;
+	    right: 0.28rem;
+			width: 30px;
+			height: 30px;
+			background: url('../img/sprite.png') no-repeat;
+			background-position: -147px -13px;
+		}
+	}
+
+	&__registration {
+		margin-top: 32px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& p {
+			font-family: $main-font, sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			color: #000000;
+		}
+	}
+
+	&__link {
+		font-size: 0.85rem;
+		line-height: 1.07rem;
+    padding: 1em 1.4em;
+		border-radius: 2em;
+	}
+}

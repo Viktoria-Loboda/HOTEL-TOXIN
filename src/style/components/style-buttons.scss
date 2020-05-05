@@ -74,11 +74,11 @@ input[type="radio"] + label {
 	font-family: $main-font, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 1rem;
+	line-height: 1.28rem;
 	color: $black-50;
 	text-transform: none;
-	padding-left: 30px;
+	padding-left: 2.14em;
 	cursor: pointer;
 }
 
@@ -146,8 +146,8 @@ input[type="radio"]:checked + label:after {
 	width: auto;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 1rem;
+	line-height: 1.7rem;
 	color: $black-75;
 	text-transform: none;
 }
@@ -195,8 +195,8 @@ input[type="radio"]:checked + label:after {
 	font-family: $main-font, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 11px;
-	line-height: 12px;
+	font-size: 0.78rem;
+	line-height: 0.85rem;
 	color: $black-25;
 
 	width: 40px;

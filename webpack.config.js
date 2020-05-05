@@ -13,6 +13,8 @@ const PATHS = {
 module.exports = {
 	entry: {
 		main: `${PATHS.src}/pages/main/main.js`,
+		signUp: `${PATHS.src}/pages/sign-up/sign-up.js`,
+		signOn: `${PATHS.src}/pages/sign-on/sign-on.js`,
 		// colorsFonts: `${PATHS.src}/pages/colorsFonts/colorsFonts.js`,
 		// formElements: `${PATHS.src}/pages/formElements/formElements.js`,
 		// headerAndFooter: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.js`,
@@ -65,6 +67,16 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: `${PATHS.src}/pages/main/main.pug`,
 			filename: 'main.html',
+			inject: false
+		}),
+		new HtmlWebpackPlugin({
+			template: `${PATHS.src}/pages/sign-up/sign-up.pug`,
+			filename: 'signUp.html',
+			inject: false
+		}),
+		new HtmlWebpackPlugin({
+			template: `${PATHS.src}/pages/sign-on/sign-on.pug`,
+			filename: 'signOn.html',
 			inject: false
 		}),
 		// new HtmlWebpackPlugin({

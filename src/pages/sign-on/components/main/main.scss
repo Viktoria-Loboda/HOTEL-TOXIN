@@ -1,0 +1,14 @@
+@import '../../../../components/sign-on/sign-on.scss';
+
+.sign-on-page {
+	padding-top: 11.3%;
+	padding-bottom: 11.6%;
+	padding-left: 5px;
+  padding-right: 5px;
+	background: url('../img/background.jpg') no-repeat;
+	background-size: cover;
+
+	& .module-login {
+		margin: 0 auto;
+	}
+}
