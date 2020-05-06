@@ -1,0 +1,101 @@
+@import '../../../../components/date-picker/date-picker.scss';
+@import '../../../../components/dropdown/dropdown.scss';
+@import './change-date-picker.scss';
+
+.sidebar {
+	width: 266px;
+
+	border: 1px solid red;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.filter {
+	& h3 {
+		font-family: $main-font, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 0.85rem;
+		line-height: 1.07rem;
+		text-transform: uppercase;
+		color: $black;
+	}
+
+	&__dropdown {
+		margin-top: 22px;
+	}
+
+	&__range-slider {
+		margin-top: 32px;
+
+		height: 80px;
+		border: 1px solid red;
+	}
+
+	&__checkbox-btns {
+		margin-top: 20px;
+	}
+
+	&__rich-checkbox-btns {
+		margin-top: 35px;
+	}
+
+	& .dropdown--room-amenities {
+		margin-top: 30px;
+	}
+
+	&__checkbox-list {
+		margin-top: 30px;
+	}
+}
+
+.checkbox-btns {
+	& .checkbox-label {
+		margin-top: 15px;
+	}
+}
+
+.rich-checkbox-btns {
+	& .rich-checkbox-label {
+		margin-top: 15px;
+		margin-bottom: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		color: $black-75;
+
+		& span {
+			display: inline-block;
+			margin-top: 6px;
+			font-weight: 400;
+			font-size: 0.85rem;
+			line-height: 1rem;
+			color: $black-50;
+		}
+	}
+}
+
+.checkbox-list {
+	&__caption {
+		position: relative;
+		margin-bottom: 18px;
+	}
+
+	&__toggle {
+		position: absolute;
+		top: -3px;
+    right: 10px;
+		width: 20px;
+		height: 20px;
+		background: url('../img/sprite.png') no-repeat;
+    background-position: -742px -15px;
+	}
+
+	&__toggle.active {
+		background-position: -690px -15px;
+	}
+
+	&__label {
+		margin-top: 13px;
+	}
+}

@@ -1,0 +1,15 @@
+.datepicker {
+	width: 266px;
+	padding: 10px 5px;
+}
+
+.datepicker--cell.datepicker--cell-day {
+	height: 36px;
+}
+
+.datepicker--cell.datepicker--cell-day.-range-from-.-selected-:after,
+.datepicker--cell.datepicker--cell-day.-range-to-.-selected-:after {
+  content: "";
+  width: 37px;
+  height: 36px;
+}

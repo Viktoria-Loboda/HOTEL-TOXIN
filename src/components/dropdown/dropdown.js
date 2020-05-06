@@ -1,8 +1,8 @@
 export default class Dropdown {
   constructor(content, data) {
-    this.paretn = document.getElementById(content);
-    this.dropdownInput   = this.paretn.querySelector('.dropdown__input');
-    this.dropdownCounter = this.paretn.querySelector('.dropdown__counter');
+    this.parent = document.getElementById(content);
+    this.dropdownInput   = this.parent.querySelector('.dropdown__input');
+    this.dropdownCounter = this.parent.querySelector('.dropdown__counter');
 
     this.data = data;
     this.initDropdow();
@@ -23,7 +23,7 @@ export default class Dropdown {
   }
 
   btnCloseHandler() {
-    let buttonUse = this.paretn.querySelector('.dropdown__btn--use');
+    let buttonUse = this.parent.querySelector('.dropdown__btn--use');
 
     if (buttonUse === null) return;
 
@@ -34,9 +34,9 @@ export default class Dropdown {
   }
 
   btnClearHandler() {
-    let buttonClear = this.paretn.querySelector('.dropdown__btn--clear');
-    let btnMinus = this.paretn.querySelectorAll('.counter__btn--minus');
-    let rowValues = this.paretn.querySelectorAll('.counter__row-quantity');
+    let buttonClear = this.parent.querySelector('.dropdown__btn--clear');
+    let btnMinus = this.parent.querySelectorAll('.counter__btn--minus');
+    let rowValues = this.parent.querySelectorAll('.counter__row-quantity');
 
     if (buttonClear === null) return;
    
@@ -99,7 +99,7 @@ export default class Dropdown {
   }
 
   changeValueDropdownInput() {
-    let rowValues = this.paretn.querySelectorAll('.counter__row-quantity');
+    let rowValues = this.parent.querySelectorAll('.counter__row-quantity');
     let arrValues = [];
 
     let str1 = '';

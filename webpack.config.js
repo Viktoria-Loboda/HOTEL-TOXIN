@@ -15,6 +15,7 @@ module.exports = {
 		main: `${PATHS.src}/pages/main/main.js`,
 		signUp: `${PATHS.src}/pages/sign-up/sign-up.js`,
 		signOn: `${PATHS.src}/pages/sign-on/sign-on.js`,
+		catalog: `${PATHS.src}/pages/catalog/catalog.js`,
 		// colorsFonts: `${PATHS.src}/pages/colorsFonts/colorsFonts.js`,
 		// formElements: `${PATHS.src}/pages/formElements/formElements.js`,
 		// headerAndFooter: `${PATHS.src}/pages/headerAndFooter/headerAndFooter.js`,
@@ -77,6 +78,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: `${PATHS.src}/pages/sign-on/sign-on.pug`,
 			filename: 'signOn.html',
+			inject: false
+		}),
+		new HtmlWebpackPlugin({
+			template: `${PATHS.src}/pages/catalog/catalog.pug`,
+			filename: 'catalog.html',
 			inject: false
 		}),
 		// new HtmlWebpackPlugin({

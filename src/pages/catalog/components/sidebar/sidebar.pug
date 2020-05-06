@@ -1,0 +1,44 @@
+include ../../../../components/date-picker/date-picker.pug
+include ../../../../components/dropdown/dropdown.pug
+div.sidebar
+	form.filter(method="post" action="#")
+		div.date-picker.filter__date-picker(id="wrapper-date-picker")
+			+datepicker('date-picker', 'даты пребывания в отеле', false)
+		div.dropdown.dropdown--guests.filter__dropdown(id="wrapper-dropdown")
+			+dropdown('Гости', 'Сколько гостей', 'Взрослые', '0', 'Дети', '0', 'Младенцы', '0', true)
+		div.range-slider.filter__range-slider
+			h3.range-slider__caption Диапозон цены
+		div.checkbox-btns.filter__checkbox-btns
+			h3.checkbox-btns__caption Checkbox buttons
+			input.checkbox-btn(type="checkbox" value="smoke" id="smoke")
+			label.checkbox-label(for="smoke") Можно курить
+			input.checkbox-btn(type="checkbox" value="pets" id="pets" checked)
+			label.checkbox-label(for="pets") Можно с питомцами
+			input.checkbox-btn(type="checkbox" value="guests" id="guests" checked)
+			label.checkbox-label(for="guests") Можно пригласить гостей<br>(до 10 человек)
+		div.rich-checkbox-btns.filter__rich-checkbox-btns
+			h3.rich-checkbox_btns__caption Доступность
+			input.rich-checkbox-btn(type="checkbox" value="wide-corridor" id="wide-corridor")
+			label.rich-checkbox-label(for="wide-corridor") Широкий коридор<br>
+				span Ширина коридоров в номере<br>не менее 91 см
+			input.rich-checkbox-btn(type="checkbox" value="assistant" id="assistant")
+			label.rich-checkbox-label(for="assistant") Помощник для инвалидов<br>
+				span На 1 этаже вас встретит специалист<br>и проводит до номера
+		div.dropdown.dropdown--room-amenities.filter__dropdown(id="wrapper-dropdown--amenities")
+			+dropdown('Удобства номера', 'Выберите удобства', 'Спальни', '0', 'Кровати', '0', 'Ванные комнаты', '0', false)
+		div.checkbox-list.filter__checkbox-list(id="checkbox-list")
+			h3.checkbox-list__caption Дополнительные удобства
+				span.checkbox-list__toggle
+			div.checkbox-list__wrapper.visually-hidden
+				input.checbox-list__btn(type="checkbox" value="breakfast" id="breakfast")
+				label.checkbox-list__label(for="breakfast") Завтрак
+				input.checbox-list__btn(type="checkbox" value="desk" id="desk" checked)
+				label.checkbox-list__label(for="desk") Письменный стол
+				input.checbox-list__btn(type="checkbox" value="baby-chair" id="baby-chair" checked)
+				label.checkbox-list__label(for="baby-chair") Стул для кормления
+				input.checbox-list__btn(type="checkbox" value="cot" id="cot" checked)
+				label.checkbox-list__label(for="cot") Кроватка
+				input.checbox-list__btn(type="checkbox" value="tv" id="tv")
+				label.checkbox-list__label(for="tv") Телевизор
+				input.checbox-list__btn(type="checkbox" value="shampoo" id="shampoo")
+				label.checkbox-list__label(for="shampoo") Шампунь
