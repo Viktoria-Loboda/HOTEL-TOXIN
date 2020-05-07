@@ -1,4 +1,9 @@
 .card-goods {
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.card-goods {
 	max-width: 270px;
 
 	background: #FFFFFF;
@@ -7,7 +12,7 @@
 	cursor: pointer;
 
 	&__main {
-		padding: 10px 20px 17px 20px;
+		padding: 23px 20px 25px 20px;
 		padding-bottom: 5px;
 	}
 
@@ -37,7 +42,7 @@
 		font-family: $caption-font, sans-serif;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 14px;
+		font-size: 15px;
 		line-height: 18px;
 		color: rgba(31, 32, 65, 0.5);
 
@@ -50,7 +55,8 @@
 	&__column--bottom {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 0px;
+		margin-top: 10px;
+    padding-bottom: 12px;
 		border-top: 1px solid rgba(31, 32, 65, 0.1);
 	}
 
@@ -88,6 +94,10 @@
 		font-weight: 400;
 		font-size: 14px;
 		color: rgba(31, 32, 65, 0.5);
+
+		& b {
+			font-size: 15px;
+		}
   }
 }
 

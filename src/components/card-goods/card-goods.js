@@ -1,4 +1,4 @@
-class SlideCardsGoods {
+export default class SlideCardsGoods {
 	constructor() {
 		this.slideIndex = []; // необходим для указания текущего слайда
 		this.initSlideCardsGoods();
@@ -70,5 +70,3 @@ class SlideCardsGoods {
 		dots[i - 1].classList.add('active');
 	}
 }
-
-let slideCardsGoods = new SlideCardsGoods();

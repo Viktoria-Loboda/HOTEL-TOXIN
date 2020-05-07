@@ -11,6 +11,8 @@ html(lang="ru")
 		div.wrapper
 			div.content
 				include ../../components/header/header.pug
-				include ./components/sidebar/sidebar.pug
+				div.catalog-wrapper
+					include ./components/sidebar/sidebar.pug
+					include ./components/catalog-goods/catalog-goods.pug
 			div.footer-wrapper
 				include ../../components/footer/footer.pug

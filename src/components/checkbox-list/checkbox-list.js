@@ -2,7 +2,7 @@ export default class CheckboxList {
 	constructor(content) {
 		let parent = document.getElementById(content);
 		this.checkboxList = parent.querySelector('.checkbox-list__wrapper');
-		this.checkboxListToggle = parent.querySelector('.checkbox-list__toggle');
+		this.checkboxListToggle = parent.querySelector('.checkbox-list__caption');
 
 		this.toggleVisibilityHandler();
 	}

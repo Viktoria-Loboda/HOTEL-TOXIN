@@ -1,4 +1,4 @@
-class StarRating {
+export default class StarRating {
 	constructor() {
 		this.initStarRating();
 	}
@@ -82,5 +82,3 @@ class StarRating {
 		}
 	}
 }
-
-let starRating = new StarRating();

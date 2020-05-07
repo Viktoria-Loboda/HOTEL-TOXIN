@@ -1,4 +1,11 @@
 @import '../../style/global.scss';
 @import '../../components/header/header.scss';
 @import './components/sidebar/sidebar.scss';
+@import './components/catalog-goods/catalog-goods.scss';
 @import '../../components/footer/footer.scss';
+
+.catalog-wrapper {
+	display: flex;
+	padding: 30px 9.7%;
+	justify-content: space-between;
+}

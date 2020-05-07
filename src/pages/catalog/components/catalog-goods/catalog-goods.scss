@@ -1,0 +1,8 @@
+@import '../../../../components/card-goods/card-goods.scss';
+@import '../../../../components/star-rating/star-rating.scss';
+
+.catalog-goods {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid red;
+}
